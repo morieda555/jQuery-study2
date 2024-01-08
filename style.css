@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url(img/main-vsual-nontitle.png);
+  background-size: cover;
+}
+
+.course {
+  background-color: #f3fcf4;
+}
+
+footer {
+  background-color: #082b48;
+}
+
+.clearfix::after {
+  content:'';
+  display: block;
+  clear:both;
+}
+
+.navbar {
+  height: 65px;
+}
+
+.toggle-list {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+/* ======ページトップへ戻るボタン＝＝＝＝＝＝ */
+.pagetop {
+  /* display: none; */
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+}
+.pagetop a {
+  display: block;
+  background-color: #ccc;
+  text-align: center;
+  color: #222;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  opacity: 0.5;
+}
+
+/* モーダル */
+heml,body,main {
+  height: 100%;
+}
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-layer {
+  height: 100%;
+  background-color: #082b48;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal-content {
+  width: 100%;
+}
+
+
+
+@media only screen and （max-width: 768px） {
+  .copyright {
+    float: none;
+    text-align: center;
+  }
+}
